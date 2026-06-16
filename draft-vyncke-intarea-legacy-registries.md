@@ -97,27 +97,27 @@ defining such extensions is not recommended.
 # Introduction
 
 Several registries were created for IPv4-related protocol elements {{!RFC791}}.
-These regisries were created by {{?RFC1700}}, which in turn was obsoleted by {{?RFC3232}} which handed
+These registries were created by {{?RFC1700}}, which in turn was obsoleted by {{?RFC3232}} which handed
 these registries to IANA.
 
-The IPv4 core specification (RFC 791) is no longer being extended (see also [IAB_IPV4]) and that more
+The IPv4 core specification (RFC 791) is no longer being extended (see also [IAB_IPV4]) and more
 modern mechanisms are defined to manage names. Also some registries do not have a registration procedures defined.
 Therefore, this document closes
 some relevant IANA registries and changes the registration procedures of others. See more in {{sec-justification}}.
 
-The information in the closed registries will still be valid and registrations already in these registries can still be updated
+The information in the closed registries is still valid and registrations already in these registries can still be updated
 per the guidance in {{Section 9.6 of !RFC8126}}.
 
 ## Justification {#sec-justification}
 
-The justifications for the changes to IANA registries listed in {{iana-considerations}}) are as follows:
+The justifications for the changes to IANA registries listed in {{iana-considerations}} are as follows:
 
 {{DHC_NETWARE}}:
 : Registrations are to be closed as Netware is not extended anymore.
 
 {{IP_OPTIONS}}:
 : It is commonly understood that the use of IPv4 options is broken {{NOT_AN_OPTION}}. The registration procedure is set to
-"IESG approval" ({{!RFC8126, Section 4.10}}), but it is
+"IESG approval" ({{!RFC8126, Section 4.10}});  it is
 expected that the IESG won't approve any new IPv4 option.
 
 {{IP_TTL}}:
