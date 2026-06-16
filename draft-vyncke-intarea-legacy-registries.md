@@ -86,8 +86,9 @@ informative:
 --- abstract
 
 IANA maintains several registries that were created for IPv4 extensions. As the IPv4 core specification
-is no longer being extended,
-the associated IANA registries need to be updated to reflect the current practice and reflect that
+is no longer being extended and as some registries do not have a registration procedure defined,
+these IANA registries need to be updated to assign a registration procedure or
+to reflect the current practice and reflect that
 defining such extensions is not recommended.
 
 
@@ -99,8 +100,9 @@ Several registries were created for IPv4-related protocol elements {{!RFC791}}.
 These regisries were created by {{?RFC1700}}, which in turn was obsoleted by {{?RFC3232}} which handed
 these registries to IANA.
 
-As the IPv4 core specification (RFC 791) is no longer being extended (see also [IAB_IPV4]) and that more
-modern mechanisms are defined to manage names, this document closes
+The IPv4 core specification (RFC 791) is no longer being extended (see also [IAB_IPV4]) and that more
+modern mechanisms are defined to manage names. Also some registries do not have a registration procedures defined.
+Therefore, this document closes
 some relevant IANA registries and changes the registration procedures of others. See more in {{sec-justification}}.
 
 The information in the closed registries will still be valid and registrations already in these registries can still be updated
@@ -114,10 +116,12 @@ The justifications for the changes to IANA registries listed in {{iana-considera
 : Registrations are to be closed as Netware is not extended anymore.
 
 {{IP_OPTIONS}}:
-: It is commonly understood that the use of IPv4 options is broken {{NOT_AN_OPTION}}. As such, the registration for new IPv4 options is closed.
+: It is commonly understood that the use of IPv4 options is broken {{NOT_AN_OPTION}}. The registration procedure is set to
+"IESG approval" ({{!RFC8126, Section 4.10}}), but it is
+expected that the IESG won't approve any new IPv4 option.
 
 {{IP_TTL}}:
-: This registry should not have been created as the IPv4 Time to Live (TTL) ({{Section 3.1 of !RFC791}}) header field can be freely selected by a source node.
+: This registry should not have been created as the IPv4 Time to Live (TTL) ({{Section 3.1 of !RFC791}}) header field can be freely selected by source nodes.
 
 {{MACHINE_NAMES}} and {{TERMINAL_TYPES}}:
 : There are no defined registration procedures for these two registries. Moreover, there were no registrations made to these registries in the last two decades. This document specifies the registration procedure as "First Come First Served" ({{!RFC8126, Section 4.4}}).
@@ -141,9 +145,12 @@ filtering on the content and amount of registrations.
 
 # IANA Considerations
 
-This document requests IANA to close the following registries per {{Section 9.6 of RFC8126}} and add a reference to this document:
+This document requests IANA to close the following registrie per {{Section 9.6 of RFC8126}} and add a reference to this document:
 
 * The "NetWare/IP Option Type 63 Sub-Option Codes" registry under the "Dynamic Host Configuration Protocol (DHCP) and Bootstrap Protocol (BOOTP) Parameters" registry group {{DHC_NETWARE}}.
+
+This document requests IANA to set the registration procedure to "IESG approval" ({{!RFC8126, Section 4.10}}) with a reference to this document for the following registries:
+
 * The "IP Option Numbers" registry under the "Internet Protocol Version 4 (IPv4) Parameters" registry group {{IP_OPTIONS}}.
 
 This document requests IANA to set the registration procedure to "First Come First Served" ({{!RFC8126, Section 4.4}}) with a reference to this document for the following registries:
