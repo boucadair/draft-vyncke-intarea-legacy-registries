@@ -102,7 +102,7 @@ these registries to IANA.
 The IPv4 core specification {{!RFC791}} is no longer being extended (see also {{IAB_IPV4}}) and more
 modern mechanisms are defined to manage names. Also, some IANA registries do not have a defined registration policy ({{Section 4 of !RFC8126}}).
 Therefore, this document closes
-some relevant IANA registries and changes the registration policy for others. See more in {{sec-justification}}.
+some relevant IANA registries and changes the registration procedure for others. See more in {{sec-justification}}.
 
 The information in the closed registries is still valid and registrations already in these registries can still be updated
 per the guidance in {{Section 9.6 of !RFC8126}}.
